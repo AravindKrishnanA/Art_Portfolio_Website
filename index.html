@@ -23,10 +23,37 @@
 			height="0" width="0" style="display:none;visibility:hidden"></iframe>
 			</noscript>
 		<!-- End Google Tag Manager (noscript) -->
+		<!-- Firebase Analytics -->
+			<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js";
+				import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-analytics.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			
+				// Your web app's Firebase configuration
+				// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+				const firebaseConfig = {
+				apiKey: "AIzaSyDO03JIa5z9DYKXwU1IxCHpExT8RJAKkus",
+				authDomain: "tagmanager1-1b61d.firebaseapp.com",
+				projectId: "tagmanager1-1b61d",
+				storageBucket: "tagmanager1-1b61d.appspot.com",
+				messagingSenderId: "757463057430",
+				appId: "1:757463057430:web:5516a874a78f78bcc12137",
+				measurementId: "G-ESE22N2249"
+				};
+			
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				const analytics = getAnalytics(app);
+			</script>
+		<!-- End Firebase Analytics-->
+
+		
 		<header>
 			<div class = "container-fluid">
 				<a href = "index.html">
-							<div id = "logo-img"></div>
+					<div id = "logo-img"></div>
 				</a>
 
 				<br>
